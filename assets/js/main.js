@@ -15426,3 +15426,17 @@ return Popper;
 
 })));
 //# sourceMappingURL=modal.js.map
+
+
+$(document).ready(function () {
+
+	var $menu = $("#menu");
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100 && $menu.hasClass("navbar")) {
+			$menu.removeClass("navbar").addClass("b-white");
+		} else if ($(this).scrollTop() <= 100 && $menu.hasClass("b-white")) {
+			$menu.removeClass("b-white").addClass("navbar");
+		}
+	}); //scroll
+});
