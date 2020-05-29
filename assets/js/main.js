@@ -15649,3 +15649,9 @@ $(document).ready(function () {
 		}, 1500);
 	});
 });
+
+$(document).ready(function () {
+	$('.navbar-collapse a').click(function (e) {
+		$('.navbar-collapse').collapse('toggle');
+	});
+});
