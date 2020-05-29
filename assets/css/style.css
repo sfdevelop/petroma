@@ -8038,6 +8038,10 @@ a.close.disabled {
     background: white;
 }
 
+* {
+    outline: none !important;
+}
+
 .red {
     background: red;
 }
@@ -8185,6 +8189,7 @@ header .logo {
 .about p {
     font-size: 24px;
     line-height: 1.2;
+    font-weight: 700;
 }
 
 .about .t-green {
@@ -8203,6 +8208,10 @@ header .logo {
 
 .logistic {
     padding-top: 80px;
+}
+
+.logistic img {
+    max-height: 8vw;
 }
 
 .logistic .p-bezh {
@@ -8231,6 +8240,7 @@ header .logo {
 p {
     font-family: gotic;
     font-size: 24px;
+    font-weight: 700;
 }
 
 .state {
@@ -8274,6 +8284,7 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    font-weight: 700;
 }
 
 .state ul li span {
