@@ -13,8 +13,9 @@
 	<meta name="googlebot" content="index, follow">
 	<meta name="google" content="notranslate">
 	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="/assets/i/favicon.png" type="img/x-icon">
 
-	<link rel="stylesheet" href="assets/css/style.min.css">
+	<link rel="stylesheet" href="/assets/css/style.min.css">
 
 
 
@@ -29,14 +30,21 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
-	<title>PetRoma</title>
+	<title> петрома - дистрибьютор продуктов в закарпатье.</title>
 
 </head>
 
 <body>
 
 	<nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light fixed-top menu">
-	
+		<div class="p-absolute">
+			<div class="alert alert-success alert-dismissible fade show" role="alert">
+				<strong>Ваше повідомлення відправлено успішно!</strong> Ми з вами зв'яжемося при першій же нагоді!
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+		</div>
 		<div class="container">
 			<!--		<a class="navbar-brand" href="#">Navbar</a>-->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,13 +54,13 @@
 			<div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto d-lg-flex align-items-center justify-content-center py-4">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">про нас</a>
+						<a class="nav-link" href="#about">про нас</a>
 					</li>
-					<li><a class="nav-link" href="#">логістичні дані </a></li>
-					<li><a class="nav-link" href="#">наш портфель </a></li>
-					<li><a class="nav-link" href="#">наші ТМ</a></li>
-					<li><a class="nav-link" href="#">умови співпраці</a></li>
-					<li><a class="nav-link" href="#"><button class="py-2 px-4 btn-1">ЗВ'ЯЗАТИСЯ З НАМИ</button> </a></li>
+					<li><a class="nav-link" href="#logistic">логістичні дані </a></li>
+					<li><a class="nav-link" href="#state">наш портфель </a></li>
+					<li><a class="nav-link" href="#tm">наші ТМ</a></li>
+					<li><a class="nav-link" href="#translator ">умови співпраці</a></li>
+					<li><a class="nav-link" href="#" data-toggle="modal" data-target="#staticBackdrop"><button class="py-2 px-4 btn-1">ЗВ'ЯЗАТИСЯ З НАМИ</button> </a></li>
 				</ul>
 			</div>
 		</div>
@@ -84,7 +92,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="about my-5">
+	<div class="about my-5" id="about">
 		<div class="container">
 			<div class="text-center">
 				<h3 class="green p-3 mb-3">Про НАС</h3>
@@ -93,12 +101,12 @@
 		</div>
 		<div class="container t-center">
 			<div class="row mt-5 ">
-				<div class="col-lg-6">
+				<div class="col-lg-6 d-lg-flex">
 					<div class="d-lg-flex align-items-center">
 						<div class="col-12 col-lg-3">
 							<div class="round mx-3 "></div>
 						</div>
-						<div class="col-lg-8">
+						<div class="col-lg-12">
 							<p>Адреса – Ужгород,<br> вул. Капушанська 170</p>
 	
 						</div>
@@ -188,16 +196,16 @@
 			</div>
 		</div>
 	</div>
-	<div class="logistic my-5">
+	<div class="logistic my-5" id="logistic">
 		<div class="container">
 			<h3 class="p-bezh p-3 text-center">Наша логістика </h3>
 		</div>
-		<div class="container mt-5 pt-5">
+		<div class="container mt-5 pt-md-5">
 			<div class="row">
 				<div class="col-lg-6">
-					<div class="d-flex align-items-center p-green p-4">
+					<div class="d-md-flex align-items-center p-green p-4">
 						<img src="assets/i/pic-03.png" alt="pic-03">
-						<h4 class="pl-5">Транспортні Засоби </h4>
+						<h4 class="pl-md-5">Транспортні Засоби </h4>
 					</div>
 					<ul class="mt-5">
 						<li>Транспорт до 2,5 т - 5 шт </li>
@@ -207,9 +215,9 @@
 					</ul>
 				</div>
 				<div class="col-lg-6">
-					<div class="d-flex align-items-center p-green p-4">
+					<div class="d-md-flex align-items-center p-green p-4">
 						<img src="assets/i/pic-04.png" alt="pic-04">
-						<h4 class="pl-5">Складські Приміщення</h4>
+						<h4 class="pl-md-5">Складські Приміщення</h4>
 					</div>
 					<ul class="mt-5">
 						<li>Основний склад - 1500 кв.м </li>
@@ -222,8 +230,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="state my-5">
-		<div class="container mb-5">
+	<div class="state my-5" id="state">
+		<div class="container mb-md-5">
 			<h3 class="p-green p-3 text-center">Наш штат</h3>
 		</div>
 		<div class="container">
@@ -261,9 +269,9 @@
 			</a>
 		</div>
 	</div>
-	<div class="partners my-5">
+	<div class="partners my-5" id="tm">
 		<div class="container">
-			<h3 class="p-bezh p-3 text-center">Наша логістика </h3>
+			<h3 class="p-bezh p-3 text-center">Наша ТМ </h3>
 		</div>
 		<div class="container my-5">
 			<div class="col-12 d-flex justify-content-center flex-wrap flex-wrap flex-md-nowrap">
@@ -287,7 +295,7 @@
 		<div class="container text-center mb-5">
 			<h3 class="p-green p-3 text-center">Наші сильні сторони</h3>
 		</div>
-		<div class="w-100 my-5 p-2"></div>
+		<div class="w-100 my-md-5 p-md-2"></div>
 		<div class="container">
 			<div class="d-lg-flex">
 				<div class="col-lg-4 p-green p-4 text-center">
@@ -366,7 +374,7 @@
 			<h3 class="p-green p-3 text-center">Наша власна мережа магазинів
 			</h3>
 		</div>
-		<div class="w-100 py-3"></div>
+		<div class="w-100 py-md-3"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6"><img class="w-100" src="assets/i/pic-05.png" alt="pic-05"></div>
@@ -388,7 +396,7 @@
 		<div class="container text-center mb-5">
 			<h3 class="p-green p-3 text-center">Кого ми шукаємо?</h3>
 		</div>
-		<div class="w-100 my-5 p-2"></div>
+		<div class="w-100 my-md-5 p-md-2"></div>
 		<div class="container">
 			<div class="d-lg-flex">
 				<div class="col-lg-4 text-center">
@@ -415,11 +423,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="translator my-5 ">
+	<div class="translator my-5 " id="translator">
 		<div class="container text-center mb-5">
 			<h3 class="p-green p-3 text-center">Наші базові умови співпраці</h3>
 		</div>
-		<div class="w-100 my-5 p-2"></div>
+		<div class="w-100 my-md-5 p-md-2"></div>
 		<div class="container ty-5">
 			<div class="row">
 				<div class="col-lg-8">
@@ -452,7 +460,7 @@
 				<div><img src="../assets/i/logo.png" alt="logo" class="w-100 logo-footer"></div>
 				<div>
 					<div class="">
-						<a href="" class="btn-2 p-3">
+						<a href="" class="btn-2 p-3" data-toggle="modal" data-target="#staticBackdrop">
 							Зв’яжіться з нами
 						</a>
 						<div class="w-100 p-3"></div>
@@ -463,7 +471,7 @@
 					<h4>petroma.uz.ua</h4>
 				</div>
 				<div>
-					<a href="">
+					<a href="https://m.facebook.com/PetRomaUZ/" target="_blank">
 						<img src="../assets/i/face.png" alt="facebook">
 					</a>
 				</div>
@@ -471,7 +479,28 @@
 		</div>
 	</footer>
 
-
+	<div class="modal fade" id="staticBackdrop" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel">Зв'яжіться з нами</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="" method="post">
+						<input type="text" name="name" placeholder="Ім'я" required>
+						<div class="w-100"></div>
+						<input type="email" name="mail" placeholder="e-mail" required>
+						<div class="w-100"></div>
+						<textarea name="text" id="" cols="30" rows="5" placeholder="Ваш текст" required></textarea>
+						<input type="submit" placeholder="Надіслати">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--JS-->
 	<script src="assets/js/main.js"></script>
 
